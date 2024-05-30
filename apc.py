@@ -3,6 +3,7 @@
 import socket
 import json
 import sys
+import os
 
 HOST = os.getenv('HOST')
 PORT = int(os.getenv('PORT'))
