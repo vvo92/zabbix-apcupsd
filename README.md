@@ -106,3 +106,5 @@ All items are defined as `Dependent` and extract relevant data using JSONPath qu
 - You're good to go
 
 ## Run in Docker
+
+- docker run -d --name apcupsd-zabbix-agent -e HOST=your_host -e PORT=your_port ghcr.io/vvo92/apcupsd-zabbix-agent:latest
