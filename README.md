@@ -104,3 +104,5 @@ All items are defined as `Dependent` and extract relevant data using JSONPath qu
 - Import `template_apcupsd.xml`
 - Adjust `{$APCUPSD_HOST}` and `{$APCUPSD_PORT}` macros if needed
 - You're good to go
+
+## Run in Docker
