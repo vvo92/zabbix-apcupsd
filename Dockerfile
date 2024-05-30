@@ -4,6 +4,9 @@ FROM zabbix/zabbix-agent:latest
 # Switch to root user to perform permission change
 USER root
 
+# Install Python3
+RUN apt-get update && apt-get install -y python3
+
 # Create the necessary directories
 RUN mkdir -p /etc/zabbix/zabbix_agentd.d /etc/zabbix/scripts
 
