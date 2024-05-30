@@ -30,4 +30,4 @@ ENV PORT=3551
 EXPOSE 10050
 
 # Run the Zabbix agent
-CMD ["zabbix_agentd", "-f"]
+CMD ["/usr/sbin/zabbix_agentd", "--foreground", "-c", "/etc/zabbix/zabbix_agentd.conf"]
