@@ -5,7 +5,7 @@ FROM zabbix/zabbix-agent:latest
 USER root
 
 # Install Python3
-RUN apt-get update && apt-get install -y python3
+RUN apk update && apk add --no-cache python3
 
 # Create the necessary directories
 RUN mkdir -p /etc/zabbix/zabbix_agentd.d /etc/zabbix/scripts
