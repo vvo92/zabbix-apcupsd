@@ -4,9 +4,12 @@ import socket
 import json
 import sys
 
-HOST = sys.argv[1]
-PORT = int(sys.argv[2])
+HOST = os.getenv('HOST')
+PORT = int(os.getenv('PORT'))
 
+if not HOST or not PORT:
+    print("Environment variables HOST and PORT must be set")
+    sys.exit(1)
 
 def command(cmd, timeout=3.0):
     cmd = len(cmd).to_bytes(2, byteorder='big') + bytes(cmd, 'ascii')
